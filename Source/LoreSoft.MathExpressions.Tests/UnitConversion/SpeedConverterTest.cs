@@ -26,11 +26,11 @@ namespace  LoreSoft.MathExpressions.Tests.UnitConversion
         {
             double result = SpeedConverter.Convert(
                 SpeedUnit.MeterPerSecond, SpeedUnit.KilometerPerHour, 60);
-            Assert.AreEqual(216d, result);
+            Assert.That(result, Is.EqualTo(216d));
 
             result = SpeedConverter.Convert(
                 SpeedUnit.MilePerHour, SpeedUnit.KilometerPerHour, 60);
-            Assert.AreEqual(96.560639999999992d, result);
+            Assert.That(result, Is.EqualTo(96.560639999999992d));
         }
     }
 }
