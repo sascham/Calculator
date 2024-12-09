@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using LoreSoft.MathExpressions.UnitConversion;
 using NUnit.Framework;
+using static NUnit.Framework.Assert;
 
 namespace LoreSoft.MathExpressions.Tests.UnitConversion
 {
@@ -26,7 +27,7 @@ namespace LoreSoft.MathExpressions.Tests.UnitConversion
         {
             double result = VolumeConverter.Convert(
                 VolumeUnit.Gallon, VolumeUnit.Quart, 1);
-            Assert.AreEqual(4, result);
+            That(result, Is.EqualTo(4));
         }
     }
 }
