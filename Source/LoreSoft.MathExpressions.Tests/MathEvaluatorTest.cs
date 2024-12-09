@@ -212,11 +212,11 @@ namespace LoreSoft.MathExpressions.Tests
             Assert.Throws<ParseException>(() => eval.Evaluate(expr));
         }
 
-        [Test, ExpectedException(typeof(ParseException))]
+        [Test]
         public void EvaluateFunctionHasTooManyArguments()
         {
             // This will result in 4 things being added to expression queue, when only 2 are expected by max function
-            eval.Evaluate("max(1,2,3,4)");
+            Assert.Throws<ParseException>(() => eval.Evaluate("max(1,2,3,4)"));
         }
 
         [Test]
