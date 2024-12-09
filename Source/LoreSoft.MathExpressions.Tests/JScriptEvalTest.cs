@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Data;
 using NUnit.Framework;
+using NUnit.Framework.Legacy;
 
 namespace  LoreSoft.Calculator.Tests
 {
@@ -20,17 +21,17 @@ namespace  LoreSoft.Calculator.Tests
             double expected = (2d + 1d) * (1d + 2d);
             double result = Evaluate("(2 + 1) * (1 + 2)");
 
-            Assert.AreEqual(expected, result);
+            Assert.That(result, Is.EqualTo(expected));
 
             expected = 2d + 1d * 1d + 2d;
             result = Evaluate("2 + 1 * 1 + 2");
 
-            Assert.AreEqual(expected, result);
+            Assert.That(result, Is.EqualTo(expected));
 
             expected = 1d / 2d;
             result = Evaluate("1/2");
 
-            Assert.AreEqual(expected, result);
+            Assert.That(result, Is.EqualTo(expected));
         }
 
         [Test()]
@@ -39,12 +40,12 @@ namespace  LoreSoft.Calculator.Tests
             double expected = ((1d + 2d) + 3d) * 2d - 8d / 4d;
             double result = Evaluate("((1+2)+3)*2-8/4");
 
-            Assert.AreEqual(expected, result);
+            Assert.That(result, Is.EqualTo(expected));
 
             expected = 3d + 4d / 5d - 8d;
             result = Evaluate("3+4/5-8");
 
-            Assert.AreEqual(expected, result);
+            Assert.That(result, Is.EqualTo(expected));
 
             // Note: DataTable.Compute doesn't support power operations, so we'll skip this test
             // expected = Math.Pow(1, 2) + 5 * 1 + 14;
