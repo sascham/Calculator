@@ -26,19 +26,19 @@ namespace LoreSoft.MathExpressions.Tests.UnitConversion
         {
             double result = TemperatureConverter.Convert(
                 TemperatureUnit.Celsius, TemperatureUnit.Fahrenheit, -40d);
-            Assert.AreEqual(-40, result);
+            Assert.That(result, Is.EqualTo(-40));
 
             result = TemperatureConverter.Convert(
                 TemperatureUnit.Celsius, TemperatureUnit.Fahrenheit, 0);
-            Assert.AreEqual(32, result);
+            Assert.That(result, Is.EqualTo(32));
 
             result = TemperatureConverter.Convert(
                 TemperatureUnit.Fahrenheit, TemperatureUnit.Celsius, 212);
-            Assert.AreEqual(100, result);
+            Assert.That(result, Is.EqualTo(100));
 
             result = TemperatureConverter.Convert(
                 TemperatureUnit.Fahrenheit, TemperatureUnit.Kelvin, 212);
-            Assert.AreEqual(373.15, result);
+            Assert.That(result, Is.EqualTo(373.15));
         }
     }
 }
