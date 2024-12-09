@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using NUnit.Framework;
+using NUnit.Framework.Legacy;
 using LoreSoft.MathExpressions;
 
 namespace LoreSoft.MathExpressions.Tests
@@ -206,10 +207,9 @@ namespace LoreSoft.MathExpressions.Tests
         [TestCase("sin(3,)")]
         [TestCase("min(min(3,4),,4)")]
         [TestCase("min((1,2))")]
-        [ExpectedException(typeof(ParseException))]
         public void EvaluateMisplacedComma(string expr)
         {
-            eval.Evaluate(expr);
+            Assert.Throws<ParseException>(() => eval.Evaluate(expr));
         }
 
         [Test, ExpectedException(typeof(ParseException))]
