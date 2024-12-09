@@ -366,7 +366,7 @@ namespace LoreSoft.MathExpressions.Tests
         {
             eval.RegisterFunction("A3", new AddThreeNumbers());
             double result = eval.Evaluate("A3(1,2,3)");
-            Assert.AreEqual(6d, result);
+            Assert.That(result, Is.EqualTo(6d));
         }
 
     }
