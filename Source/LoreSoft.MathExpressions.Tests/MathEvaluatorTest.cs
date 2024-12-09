@@ -172,7 +172,8 @@ namespace LoreSoft.MathExpressions.Tests
             Assert.AreEqual(expected, result);
         }
 
-        [Test, Ignore]
+        [Test]
+        [Ignore("This test is currently not working as expected")]
         public void EvaluateFunctionMinWithinParenthesis()
         {
             // this should work... but doesnt.
