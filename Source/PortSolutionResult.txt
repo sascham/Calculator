@@ -2,29 +2,32 @@
 References
 ==========
 LoreSoft.MathExpressions.Tests
+NUnit.Framework
 LoreSoft.MathExpressions
+NUnit.Framework.Constraints
+LoreSoft.Calculator.Tests
 System
+System.Data
 LoreSoft.MathExpressions.Tests.Metadata
 LoreSoft.MathExpressions.Metadata
 LoreSoft.MathExpressions.UnitConversion
-System.Reflection
-System.Runtime.InteropServices
 LoreSoft.MathExpressions.Tests.UnitConversion
 System.Collections.Generic
 System.Text
-NUnit.Framework
-System.Runtime.CompilerServices
+NUnit.Framework.Legacy
+NUnit.Framework.Assert
 project.all
 LoreSoft.MathExpressions.Properties
+System.Reflection
 System.Globalization
 System.Linq
 System.Diagnostics.CodeAnalysis
 System.IO
 System.ComponentModel
 System.Runtime.Serialization
-<global namespace>
 System.CodeDom.Compiler
 System.Diagnostics
+System.Runtime.CompilerServices
 System.Resources
 System.Security.Permissions
 System.Collections.ObjectModel
@@ -33,11 +36,30 @@ System.Collections.ObjectModel
 DownloadedFiles
 ===============
 project.all.json
+system.data.json
 
 ==============
 ProjectResults
 ==============
 ----------------------
+Showing results for: /tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Source/LoreSoft.MathExpressions/LoreSoft.MathExpressions.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net8.0
+---------------------------
+Source Versions:
+---------------------------
+net48
+---------------------------
+Upgrade packages:
+---------------------------
+---------------------------
+Action packages:
+---------------------------
+
+----------------------
 Showing results for: /tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Source/LoreSoft.MathExpressions.Tests/LoreSoft.MathExpressions.Tests.csproj
 ----------------------
 ---------------------------
@@ -51,28 +73,9 @@ net48
 ---------------------------
 Upgrade packages:
 ---------------------------
-NUnit,->4.2.2
 ---------------------------
 Action packages:
 ---------------------------
----------------------------
-Executed Actions for file: Project
----------------------------
-
-Action Type: Project
-Action Name: ArchiveFiles
-Action Value: BundleConfig.cs,FilterConfig.cs,RouteConfig.cs,WebApiConfig.cs,global.asax.cs,global.asax,AssemblyInfo.cs,packages.config
-Times Run: 1
-Executions With Error: 0
-Invalid Executions: 0
-
-Action Type: ProjectFile
-Action Name: MigrateProjectFile
-Action Value: 
-Times Run: 1
-Executions With Error: 0
-Invalid Executions: 0
-
 
 ----------------------
 Showing results for: /tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Source/LoreSoft.MathExpressions/LoreSoft.MathExpressions.csproj
@@ -91,24 +94,6 @@ Upgrade packages:
 ---------------------------
 Action packages:
 ---------------------------
----------------------------
-Executed Actions for file: Project
----------------------------
-
-Action Type: Project
-Action Name: ArchiveFiles
-Action Value: BundleConfig.cs,FilterConfig.cs,RouteConfig.cs,WebApiConfig.cs,global.asax.cs,global.asax,AssemblyInfo.cs,packages.config
-Times Run: 1
-Executions With Error: 0
-Invalid Executions: 0
-
-Action Type: ProjectFile
-Action Name: MigrateProjectFile
-Action Value: 
-Times Run: 1
-Executions With Error: 0
-Invalid Executions: 0
-
 
 ----------------------
 Showing results for: /tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Source/LoreSoft.MathExpressions.Tests/LoreSoft.MathExpressions.Tests.csproj
@@ -124,64 +109,9 @@ net48
 ---------------------------
 Upgrade packages:
 ---------------------------
-NUnit,->4.2.2
 ---------------------------
 Action packages:
 ---------------------------
----------------------------
-Executed Actions for file: Project
----------------------------
-
-Action Type: Project
-Action Name: ArchiveFiles
-Action Value: BundleConfig.cs,FilterConfig.cs,RouteConfig.cs,WebApiConfig.cs,global.asax.cs,global.asax,AssemblyInfo.cs,packages.config
-Times Run: 1
-Executions With Error: 0
-Invalid Executions: 0
-
-Action Type: ProjectFile
-Action Name: MigrateProjectFile
-Action Value: 
-Times Run: 1
-Executions With Error: 0
-Invalid Executions: 0
-
-
-----------------------
-Showing results for: /tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Source/LoreSoft.MathExpressions/LoreSoft.MathExpressions.csproj
-----------------------
----------------------------
-Target Versions:
----------------------------
-net8.0
----------------------------
-Source Versions:
----------------------------
-net48
----------------------------
-Upgrade packages:
----------------------------
----------------------------
-Action packages:
----------------------------
----------------------------
-Executed Actions for file: Project
----------------------------
-
-Action Type: Project
-Action Name: ArchiveFiles
-Action Value: BundleConfig.cs,FilterConfig.cs,RouteConfig.cs,WebApiConfig.cs,global.asax.cs,global.asax,AssemblyInfo.cs,packages.config
-Times Run: 1
-Executions With Error: 0
-Invalid Executions: 0
-
-Action Type: ProjectFile
-Action Name: MigrateProjectFile
-Action Value: 
-Times Run: 1
-Executions With Error: 0
-Invalid Executions: 0
-
 
 
 ===========
