@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using LoreSoft.MathExpressions.UnitConversion;
 using NUnit.Framework;
+using NUnit.Framework.Legacy;
 
 namespace LoreSoft.MathExpressions.Tests.UnitConversion
 {
@@ -26,15 +27,15 @@ namespace LoreSoft.MathExpressions.Tests.UnitConversion
         {
             double result = TimeConverter.Convert(
                 TimeUnit.Hour, TimeUnit.Day, 24);
-            Assert.AreEqual(1, result);
+            Assert.That(result, Is.EqualTo(1));
 
             result = TimeConverter.Convert(
                 TimeUnit.Minute, TimeUnit.Hour, 60);
-            Assert.AreEqual(1, result);
+            Assert.That(result, Is.EqualTo(1));
 
             result = TimeConverter.Convert(
                 TimeUnit.Day, TimeUnit.Week, 7);
-            Assert.AreEqual(1, result);
+            Assert.That(result, Is.EqualTo(1));
         }
     }
 }
