@@ -26,23 +26,23 @@ namespace LoreSoft.MathExpressions.Tests.Metadata
         public void GetDescription()
         {
             string result = AttributeReader.GetDescription<SpeedUnit>(SpeedUnit.MilePerHour);
-            Assert.AreEqual("Mile/Hour", result);
+            Assert.That(result, Is.EqualTo("Mile/Hour"));
 
             result = AttributeReader.GetDescription<SpeedUnit>(SpeedUnit.Knot);
-            Assert.AreEqual("Knot", result);
+            Assert.That(result, Is.EqualTo("Knot"));
 
 
-           
+
         }
 
         [Test()]
         public void GetAbbreviation()
         {
             string result = AttributeReader.GetAbbreviation<SpeedUnit>(SpeedUnit.MilePerHour);
-            Assert.AreEqual("mph", result);
+            Assert.That(result, Is.EqualTo("mph"));
 
             result = AttributeReader.GetAbbreviation<SpeedUnit>(SpeedUnit.Knot);
-            Assert.AreEqual("knot", result);
+            Assert.That(result, Is.EqualTo("knot"));
 
 
 
