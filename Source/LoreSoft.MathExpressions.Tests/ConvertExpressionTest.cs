@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using LoreSoft.MathExpressions;
 using NUnit.Framework;
+using NUnit.Framework.Legacy;
 
 namespace  LoreSoft.MathExpressions.Tests
 {
@@ -25,13 +26,13 @@ namespace  LoreSoft.MathExpressions.Tests
         public void IsConvertExpression()
         {
             bool result = ConvertExpression.IsConvertExpression("blah");
-            Assert.IsFalse(result);
+            Assert.That(result, Is.False);
 
             result = ConvertExpression.IsConvertExpression("[m->ft]");
-            Assert.IsTrue(result);
+            Assert.That(result, Is.True);
 
             result = ConvertExpression.IsConvertExpression("[ms->ft]");
-            Assert.IsFalse(result);
+            Assert.That(result, Is.False);
 
         }
 
@@ -39,10 +40,10 @@ namespace  LoreSoft.MathExpressions.Tests
         public void Convert()
         {
             ConvertExpression e = new ConvertExpression("[in->ft]");
-            Assert.IsNotNull(e);
+            Assert.That(e, Is.Not.Null);
 
             double feet = e.Convert(new double[] { 12d });
-            Assert.AreEqual(1, feet);
+            Assert.That(feet, Is.EqualTo(1));
         }
     }
 }
